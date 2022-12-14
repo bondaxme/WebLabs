@@ -1,0 +1,144 @@
+* {
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    grid-row: 1;
+    background-color: #8198FF;
+    min-height: 90px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    color: white;
+}
+
+.footer {
+    grid-row: 3;
+    background-color: #8198FF;
+    min-height: 90px;
+}
+
+.header-text,
+.footer-text {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 10px 20px;
+    min-height: 90px;
+}
+
+.header-text>h1,
+.footer-text>h1 {
+    color: black;
+    min-width: 150px;
+    max-width: 500px;
+    padding: 10px 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 30px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.header-text>p,
+.footer-text>p {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 200px;
+}
+
+.layout {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 3fr 17fr;
+}
+
+.left-side {
+    grid-column: 1;
+    background-color: darksalmon;
+    min-width: 140px;
+}
+
+.left-side>p {
+    margin-top: 0px;
+    padding: 5px 5px;
+}
+
+.left-side>ul,
+.left-side ol {
+    padding-inline-start: 25px;
+}
+
+.right-side {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 49px auto;
+}
+
+.navigate-list {
+    grid-row: 1;
+    background-color: lightseagreen;
+}
+
+.navigate-list>ul {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: left;
+    text-align: center;
+}
+
+.navigate-list li {
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+}
+
+.under-navigate {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.under-navigate>article {
+    width: 100%;
+    min-height: 100%;
+}
+
+.under-navigate>aside {
+    background-color: darksalmon;
+    width: 25%;
+    min-height: 100%;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.under-navigate p {
+    margin-top: 0px;
+    padding: 5px 5px;
+}
